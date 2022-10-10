@@ -1,7 +1,12 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 12px;
+}
 /*
 Paleta de colores
 Amarillo: #EAC926;
