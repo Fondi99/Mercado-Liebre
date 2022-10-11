@@ -1,5 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
 }
 h2 {
     font-size: 24px;
@@ -56,6 +58,43 @@ footer i.icon{
     margin-bottom: 10px;
     font-size: 2em;
     color: #1259c3;
+}
+main{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background-color: #ebebeb;
+}
+main section{
+    margin: 10px 0;
+}
+main section article {
+    width: 250px;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+}
+main section .articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+article img{
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+#shipping-logo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: #39b54a solid 1px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
 }
 /*
 Paleta de colores
