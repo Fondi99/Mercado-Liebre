@@ -96,6 +96,23 @@ article img{
     font-size: 16px;
     padding: 5px;
 }
+@media (min-width:361px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .description{
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
 /*
 Paleta de colores
 Amarillo: #EAC926;
