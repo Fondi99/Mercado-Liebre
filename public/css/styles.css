@@ -7,6 +7,56 @@ h2 {
 p {
     font-size: 12px;
 }
+.price {
+    font-size: 18px;
+}
+.discount {
+    font-size: 16px;
+    color: green;
+}
+.description {
+    font-size: 16px;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu .icon{
+    font-size: 24px;
+    padding:10px;
+    border-radius: 4px;
+    color: #d6d6d6;
+    background-color: #1259c3;
+    border: solid 1px #1259c3;
+}
+header{
+    background-color: #EAC926;
+}
+#brand {
+    width: 50%;
+}
+#brand-logo{
+    min-width: 130px;
+    max-width: 200px;
+    padding: 10px;
+}
+footer{
+    background-color: #ffffff;
+    padding: 10px;
+}
+footer section article{
+    text-align: center;
+    margin: 20px;
+    padding: 0 40px;
+}
+footer h3, footer p {
+    margin: 0;
+    color: #666;
+}
+footer i.icon{
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #1259c3;
+}
 /*
 Paleta de colores
 Amarillo: #EAC926;
