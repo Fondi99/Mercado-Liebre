@@ -127,7 +127,7 @@ main section article i{
     }
 
 /*Tablet*/
-@media (min-width:361px){
+@media (min-width:426px){
     header nav{
         display: flex;
         justify-content: space-between;
@@ -142,13 +142,22 @@ main section article i{
     }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 40%;
     }
     .burger-menu{
         display: none;
     }
+    main section .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 }
 @media (min-width:769px){
-
+    main section article {
+        flex: 20%;
+    }
 }
 /*
 Paleta de colores
