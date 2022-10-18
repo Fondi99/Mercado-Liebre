@@ -73,6 +73,25 @@ header{
     justify-content: center;
     align-self: center;
     flex: 40%;
+    
+}
+#search-bar input{
+    display: block;
+    width: 90%;
+    border: #ebebeb solid 1px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 4px;
+    height: 50px;
+}
+#search-bar button{
+    display: block;
+    width: 10%;
+    border: #ebebeb solid 1px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 4px;
+    height: 50px;
 }
 .header-stuff{
     display: flex;

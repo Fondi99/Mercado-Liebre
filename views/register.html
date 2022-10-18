@@ -16,7 +16,7 @@
                 <img id="brand-logo" src="./image/logo-mercado-liebre.svg" alt="Logo">
             </div>
             <div id="search-bar">
-                <input type="text" placeholder="Buscar productos, marcas">
+                <input type="text" name="fullname" placeholder="Buscar productos, marcas y mas" onfocus="this.value = this.value=='Buscar productos, marcas y mas'?'':this.value;" onblur="this.value = this.value==''?'Buscar productos, marcas y mas':this.value;" style="color:grey;">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div id="compra-cuotas">
@@ -48,27 +48,29 @@
             <div class="form-control">
                 <h3>Nombre y Apellido</h3>
                 <label for="form-user-fullname"></label>
-                <input type="text" name="fullname" value="Nombre y Apellido" onfocus="this.value = this.value=='Nombre y Apellido'?'':this.value;" onblur="this.value = this.value==''?'Nombre y Apellido':this.value;">
+                <input type="text" name="fullname" value="Nombre y Apellido" onfocus="this.value = this.value=='Nombre y Apellido'?'':this.value;" onblur="this.value = this.value==''?'Nombre y Apellido':this.value;" style="color:grey;">
+                <span class="feedback"></span>
             </div>
             <div class="form-control">
                 <h3>Nombre de usuario</h3>
                 <label for="form-user-username"></label>
-                <input type="text" name="username" value="Nombre de usuario" onfocus="this.value = this.value=='Nombre de usuario'?'':this.value;" onblur="this.value = this.value==''?'Nombre de usuario':this.value;">
+                <input type="text" name="username" value="Nombre de usuario" onfocus="this.value = this.value=='Nombre de usuario'?'':this.value;" onblur="this.value = this.value==''?'Nombre de usuario':this.value;" style="color:grey;">
+                <span class="feedback"></span>
             </div>
             <div class="form-control">
                 <h3>Fecha de nacimiento</h3>
                 <label for="form-user-fullname"></label>
-                <input type="date" name="birthdate">
+                <input type="date" name="birthdate" style="color:grey;">
             </div>
             <div class="form-control">
                 <h3>Dirección</h3>
                 <label for="form-user-address"></label>
-                <input type="text" name="address" value="Dirección" onfocus="this.value = this.value=='Direccion'?'':this.value;" onblur="this.value = this.value==''?'Direccion':this.value;">
+                <input type="text" name="address" value="Dirección" onfocus="this.value = this.value=='Direccion'?'':this.value;" onblur="this.value = this.value==''?'Direccion':this.value;" style="color:grey;">
             </div>
             <div class="form-control">
                 <h3>Perfil del usuario</h3>
                 <label for="form-user-profile"></label>
-                <select name="profile" id="form-user-profile">
+                <select name="profile" id="form-user-profile" style="color:grey;">
                     <option value="seller">Vendedor</option>
                     <option value="buyer">Comprador</option>
                 </select>
@@ -107,11 +109,13 @@
                 <h3>Contraseña</h3>
                 <label for="form-user-password"></label>
                 <input type="password" name="photo" id="form-user-photo">
+                <span class="feedback"></span>
             </div>
             <div class="form-control">
                 <h3>Confirmar contraseña</h3>
                 <label for="form-user-passwordmatch"></label>
                 <input type="password" name="password-match" id="form-user-passwordmatch">
+                <span class="feedback"></span>
             </div>
             <div class="form-control submit-control">
                 <button type="clear">Limpiar</button>
