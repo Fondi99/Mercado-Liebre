@@ -9,11 +9,22 @@ app.listen(3030,()=>
     console.log("Servidor abierto en el puerto 3030.")
 );
 
-//Pagina principal
-app.get('/', (req, res) => {
-    res.send("Pagina principal")
-});
-
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname, './views/home.html'))
 });
+
+app.route('/register')
+    .get((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/register.html'));
+    })
+    .post((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/register.html'));
+    })
+
+app.route('/login')
+    .get((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/login.html'));
+    })
+    .post((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/login.html'));
+    })

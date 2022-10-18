@@ -42,7 +42,7 @@ p {
 nav ul{
     padding: 0;
     display: none;
-    padding: 5px;
+    padding: 20px;
 }
 nav ul li{
     list-style-type: none;
@@ -65,6 +65,8 @@ header{
 }
 #brand-logo{
     padding: 10px;
+    max-width: 200px;
+    margin: 10px;
 }
 #search-bar{
     display: flex;
@@ -140,7 +142,65 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
-    }
+}
+form {
+    margin-top: 20px;
+}
+form h3{
+    text-align: left;
+    width: 100%;
+}
+.form-control {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control input,
+.form-control select {
+    display: block;
+    width: 100%;
+    border: #ebebeb solid 1px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 4px;
+}
+.form-control .checkbox,
+.form-control .file {
+    display: flex;
+    text-align: left;
+}
+
+.form-control .checkbox label {
+    display: inline-block;
+    width: 500%;
+}
+
+.submit-control {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.submit-control button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+.submit-control button[type="submit"] {
+    background-color: #1259c3;
+    color: #fff;
+}
+
+.submit-control button[type="submit"]:hover {
+    background-color: #0022aa;
+}
+  
 
 /*Tablet*/
 @media (min-width:426px){
@@ -151,7 +211,8 @@ main section article i{
     nav ul{
         display: flex;
         justify-content: space-around;
-        width: 40%;
+        width: 50%;
+        padding: 10px;
     }
     .description{
         display: block;
@@ -177,13 +238,19 @@ main section article i{
     #compra-cuotas{
         flex: 30%;
         align-self: center;
+        padding: 10px;
     }
-    
-
 }
 @media (min-width:769px){
     main section article {
         flex: 20%;
+    }
+    form{
+        width: 70%;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        margin-top: 20px;
     }
 }
 /*
