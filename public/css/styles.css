@@ -73,6 +73,7 @@ header{
     justify-content: center;
     align-self: center;
     flex: 40%;
+    margin: 10px;
     
 }
 #search-bar input{
@@ -219,8 +220,6 @@ form h3{
 .submit-control button[type="submit"]:hover {
     background-color: #0022aa;
 }
-  
-
 /*Tablet*/
 @media (min-width:426px){
     header nav{
@@ -259,6 +258,28 @@ form h3{
         align-self: center;
         padding: 10px;
     }
+    main section .items .item {
+        width: 50%;
+    }
+    #shipping-logo{
+        transition: all 0.5s;
+    }
+    main section article {
+        box-shadow: none;
+        transition: all 0.5s;
+    }
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article:hover .description {
+        opacity: 1;
+    } 
+    main section article:hover #shipping-logo {
+        transform: rotate(-90deg);
+    }
+    footer section article:hover i.icon {
+        color: #0022aa;
+    }
 }
 @media (min-width:769px){
     main section article {
@@ -271,6 +292,20 @@ form h3{
         align-items: center;
         margin-top: 20px;
     }
+    .foot-article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer section article{
+        flex: 0 0 28%;
+        transition: all 0.5s;
+    }
+    .copyright{
+        flex: 100%;
+        text-align: left;
+    }
+    
 }
 /*
 Paleta de colores
