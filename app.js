@@ -3,9 +3,10 @@ const app = express();
 const path = require('path');
 
 app.use(express.static(path.resolve(__dirname,'./public')));
+
 //Levantar nuestro servidor
-const port= process.env.PORT || 3030;
-app.listen(port,()=>console.log(`Servidor corriendo en el puerto ${port}`))
+const PORT= process.env.PORT || 3030;
+app.listen(PORT,()=>console.log(`Servidor corriendo en el puerto ${PORT}`))
 
 //Pagina Principal
 app.get('/',(req,res)=>{
