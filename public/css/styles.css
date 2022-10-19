@@ -19,6 +19,8 @@ p {
 .discount {
     font-size: 16px;
     color: green;
+    width: 70%;
+    text-align:center;
     display: inline-block;
 }
 .description {
@@ -148,6 +150,10 @@ article img{
     border-radius: 50%;
     font-size: 16px;
     padding: 5px;
+}
+#price-discount{
+    display: flex;
+    width: 100%;
 }
 main section article i{
     display: block;
